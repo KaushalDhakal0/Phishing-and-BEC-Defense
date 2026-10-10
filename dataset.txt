@@ -1,0 +1,11 @@
+// need to choose one dataset
+
+https://www.kaggle.com/datasets/victusadi/phishing-urls-dataset-with-extracted-features
+
+
+https://www.kaggle.com/datasets/subhajournal/phishingemails/data
+
+
+https://www.kaggle.com/datasets/kuladeep19/phishing-and-legitimate-emails-dataset
+
+
