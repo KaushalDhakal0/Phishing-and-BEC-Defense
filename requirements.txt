@@ -1,10 +1,13 @@
-streamlit
-pandas
-numpy
-scikit-learn
-tldextract
-dnspython
-python-dotenv
-requests
-pytest
-joblib
+# streamlit
+# pandas
+# numpy
+# scikit-learn
+# tldextract
+# dnspython
+# python-dotenv
+# requests
+# pytest
+# joblib
+
+streamlit>=1.36,<2.0
+pandas>=2.0,<3.0

@@ -577,46 +577,16 @@ Windows:
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 ```
 
-macOS/Linux:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
 
 ### Step 3: Install dependencies
 
-Create `requirements.txt` with the packages your implementation uses. A possible starting point is:
-
-```text
-streamlit
-pandas
-numpy
-scikit-learn
-joblib
-tldextract
-pytest
-matplotlib
-```
-
-Install them:
-
 ```bash
+python -m pip install --upgrade pip 
 pip install -r requirements.txt
 ```
-
-Pin tested package versions before the final submission.
-
-If the project uses an external LLM or URL intelligence service, add its SDK only when needed and configure its credentials securely.
-
-### Step 4: Configure environment variables
-
-Copy `.env.example` to `.env` if your project needs API keys or configuration values.
-
-Never commit `.env` or API credentials to GitHub.
 
 ### Step 5: Prepare the data and model
 
@@ -627,6 +597,7 @@ The application should provide a clear error message if the model or required da
 ### Step 6: Launch the dashboard
 
 ```bash
+python create_dataset.py
 streamlit run app.py
 ```
 
@@ -666,49 +637,6 @@ Use validation data for threshold selection and reserve the test set for final e
 
 The application should provide an uncertainty-aware result when evidence is incomplete or contradictory.
 
-## 12. Git and Team Collaboration
-
-Recommended workflow:
-
-1. Create a GitHub repository.
-2. Protect the main branch if repository settings permit.
-3. Assign each student ownership of their module.
-4. Create feature branches for individual tasks.
-5. Open pull requests for code review.
-6. Require basic tests to pass before merging.
-7. Integrate modules through agreed function interfaces.
-8. Keep documentation updated with code changes.
-
-Suggested branch names:
-
-```text
-feature/dataset-preparation
-feature/ml-classifier
-feature/investigation-pipeline
-feature/streamlit-dashboard
-feature/evaluation-testing
-```
-
-Agree on a common output structure so that every module integrates consistently.
-
-Example investigation result:
-
-```json
-{
-  "risk_label": "high",
-  "risk_score": 0.92,
-  "evidence": [
-    "Urgent request for account verification",
-    "Suspicious URL pattern detected"
-  ],
-  "recommendations": [
-    "Do not click the link",
-    "Verify the request through an official channel"
-  ]
-}
-```
-
-This is an illustrative example, not a measured model result. Define whether `risk_score` represents model probability or a combined heuristic score, and do not treat those quantities as interchangeable.
 
 ## 13. Definition of Done
 
