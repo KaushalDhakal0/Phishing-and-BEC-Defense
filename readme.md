@@ -669,15 +669,6 @@ Potential future extensions include:
 * Deployment to a secure cloud environment.
 * Monitoring model performance as phishing patterns change.
 
-## 15. Team Members
-
-| Role      | Name           | Main Responsibility          |
-| --------- | -------------- | ---------------------------- |
-| Student 1 | To be assigned | Dataset and schema           |
-| Student 2 | To be assigned | Detection and ML             |
-| Student 3 | To be assigned | Parsing and orchestration    |
-| Student 4 | To be assigned | Dashboard and integration    |
-| Student 5 | To be assigned | Evaluation and documentation |
 
 ## 16. Conclusion
 
@@ -686,3 +677,5 @@ This project combines rule-based detection, machine learning, URL and domain ana
 By separating responsibilities across five team members and defining shared interfaces, evaluation standards, and safety requirements, the team can develop the application incrementally and deliver a reproducible, testable university project.
 
 **Project status:** Initial project plan. Update this README as the implementation, dataset, model results, and interface are completed.
+
+![alt text](image.png)
